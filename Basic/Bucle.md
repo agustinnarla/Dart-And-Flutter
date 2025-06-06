@@ -46,3 +46,21 @@ void mapLoop(){
   });
 }
 ```
+
+
+#### Ejercicio 6
+
+```
+void ejercicio6() {
+
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  int sum = 0;
+
+  for (int element in numbers) {
+    if (element % 2 == 0) {
+      sum += element;
+    }
+  }
+  print(sum);
+}
+```
