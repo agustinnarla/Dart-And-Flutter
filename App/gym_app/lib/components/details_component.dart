@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:gym_app/components/weight_selector_component.dart';
 
 class ExercisesCard extends StatelessWidget {
   // final String title;
   final String excercise;
   final String reps;
   final int weight;
+
   const ExercisesCard({
     super.key,
     //required this.title,
@@ -15,6 +17,8 @@ class ExercisesCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
       child: Column(
@@ -52,25 +56,13 @@ class ExercisesCard extends StatelessWidget {
                   ],
                 ),
               ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.add, color: Colors.white),
-                color: Color(0xFF2E4229),
-                style: IconButton.styleFrom(backgroundColor: Color(0xFF2E4229)),
-              ),
-              SizedBox(width: 12),
-              Text(weight.toString(), style: TextStyle(color: Colors.white, fontSize: 20)),
-              SizedBox(width: 12),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.remove, color: Colors.white),
-                color: Color(0xFF2E4229),
-                style: IconButton.styleFrom(backgroundColor: Color(0xFF2E4229)),
-              ),
+              WeightSelectorComponent(),
             ],
           ),
         ],
       ),
     );
   }
+
+  
 }

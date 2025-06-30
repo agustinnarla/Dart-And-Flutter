@@ -22,7 +22,7 @@ class _Day1ScreenState extends State<Day1Screen> {
       body: ListView(
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(16, 20, 16, 10),
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
             child: Text(
               "Día 1 - Full body",
               style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),
@@ -30,13 +30,37 @@ class _Day1ScreenState extends State<Day1Screen> {
           ),
           ExercisesCard(
             // title: "Día 1 Full Body",
-            excercise: "Press de Banca en smith",
+            excercise: "Curl de bicep declinado",
             reps: "3 ser - 12 a 8 rep",
             weight: 2,
           ),
           ExercisesCard(
             //title: "Día 1 Full Body",
-            excercise: "Press de Banca en smith",
+            excercise: "Curl convencional",
+            reps: "3 ser - 12 a 8 rep",
+            weight: 2,
+          ),
+          ExercisesCard(
+            //title: "Día 1 Full Body",
+            excercise: "Tricep en polea",
+            reps: "3 ser - 12 a 8 rep",
+            weight: 2,
+          ),
+          ExercisesCard(
+            //title: "Día 1 Full Body",
+            excercise: "Jalón al pecho",
+            reps: "3 ser - 12 a 8 rep",
+            weight: 2,
+          ),
+          ExercisesCard(
+            //title: "Día 1 Full Body",
+            excercise: "Remo en banco",
+            reps: "3 ser - 12 a 8 rep",
+            weight: 2,
+          ),
+          ExercisesCard(
+            //title: "Día 1 Full Body",
+            excercise: "Sentadilla en smith",
             reps: "3 ser - 12 a 8 rep",
             weight: 2,
           ),
